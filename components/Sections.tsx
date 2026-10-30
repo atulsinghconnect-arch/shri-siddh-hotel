@@ -549,7 +549,7 @@ function Skyline() {
   return (
     <div className="skyline">
       {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img src="/footer-skyline.png" alt="" aria-hidden width={1920} height={242} loading="lazy" />
+      <img src={IMG.skyline} alt="" aria-hidden width={1920} height={242} loading="lazy" />
     </div>
   );
 }

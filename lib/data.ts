@@ -1,8 +1,12 @@
+/** Prefix for files in /public, so they resolve when hosted under a sub-path (GitHub Pages). */
+export const asset = (p: string) => `${process.env.NEXT_PUBLIC_BASE_PATH || ""}${p}`;
+
 const u = (id: string, w = 1200) =>
   `https://images.unsplash.com/photo-${id}?auto=format&fit=crop&w=${w}&q=75`;
 
 export const IMG = {
-  hero: ["/hero-hotel.webp"],
+  hero: [asset("/hero-hotel.webp")],
+  skyline: asset("/footer-skyline.png"),
   amenitiesBg: u("1600607687939-ce8a6c25118c", 2000),
   building: u("1551882547-ff40c63fe5fa", 1200),
   video: u("1611892440504-42a792e24d32", 2000),
